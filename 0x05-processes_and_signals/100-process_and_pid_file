@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# Does the following:
+#   Create a file /var/run/myscript.pid containing the script PID.
+#   shows "To infinity and beyond"
+#   shows "I hate the kill command" upon receiving a SIGTERM
+#   shows "Y U no love me?!" upon receiving a SIGINT
+#   Deletes the file /var/run/myscript.pid
 
 terminator() {
   rm /var/run/myscript.pid
